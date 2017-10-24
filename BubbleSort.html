@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BubleSort</title>
+</head>
+	<body>
+		<script>
+	//Bubble sort сортировка пузырьком
+			function bubble(ar)
+			{
+			 var count = ar.length-1;
+
+				for (var i = 0; i < count; i++){ 
+				     for (var j = 0; j < count-i; j++){
+				        if (ar[j]> ar[j+1]){
+				           var temp = ar[j];
+				           ar[j] = ar[j+1];
+				           ar[j+1] = temp;
+				        }
+				    }
+				}
+			 return ar;
+			}
+	</script>
+	</body>
+</html>
