@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BinarySearch</title>
+</head>
+	<body>
+		<script>
+		//Binary search бинарный поиск
+		function binary (a,t) {
+			var l,r,m,t;
+			l = 0;
+			r = a.length - 1;
+			while (l <= r && a[m] != t){
+				m = Math.round((r + l) / 2);
+				if (a[m] < t){
+					l = m + 1;
+				}else{
+					r = m - 1;
+				}
+			}
+			return m;
+		}
+	</script>
+	</body>
+</html>
